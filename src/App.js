@@ -1,10 +1,9 @@
-import './App.css';
-import MapFilterReduce from "./components/MapFilterReduce";
+import ArrayFunctions from './components/ArrayFunctions';
 
 export default function  () {
   return (
     <div className="App">
-      <MapFilterReduce /> 
+      <ArrayFunctions />
     </div>
   )
 }
