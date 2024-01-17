@@ -91,8 +91,33 @@ function ArrayFunctions() {
   // 3. find out all the firstname whos age is greater than 10
 
   const ageGreter10 = users.filter((val)=>val.age > 10).map((x)=> x.firstName);
+  //console.log(ageGreter10)
 
-  console.log(ageGreter10)
+  // 4. find out all the first name whos age is greater than 10 with reduce function
+  const allusers = [
+    {firstName:"kapil",  lastName:"hans", age: 36},
+    {firstName:"ketan",  lastName:"hans", age: 12},
+    {firstName:"kavish",  lastName:"hans", age: 3},
+    {firstName:"Yuvina",  lastName:"hans", age: 3},
+    {firstName:"pari", lastName:"hans", age:12}
+  ]
+
+  const ageLess10 = allusers.reduce((acc, current)=>{
+    console.log(current.age < 10)
+    if(current.age < 10){
+        acc[current.firstName] = current.age;
+    } 
+    return acc;
+  },{})
+
+  const ageGreaterThan10 = allusers.reduce((acc, curr)=> {
+    if(curr.age > 10){
+        acc.push(curr.firstName);
+    }
+    return acc;
+  },[])
+
+  console.log(ageGreaterThan10)
 
   return (
     <h1>MAP, Filter and Reduce Function</h1>
