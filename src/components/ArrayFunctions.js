@@ -39,6 +39,7 @@ function ArrayFunctions() {
   // console.log(greterThan4)
 
   // **** Reduce function is used to reduce an array in single element **** //
+
   // in this we need to pass the initial value. if we are not pass the initial value than it will take the first element of an array as initial value.
 
   const arr2 = [5,4,3,11,6,7];
@@ -102,14 +103,17 @@ function ArrayFunctions() {
     {firstName:"pari", lastName:"hans", age:12}
   ]
 
+  // with object
   const ageLess10 = allusers.reduce((acc, current)=>{
-    console.log(current.age < 10)
     if(current.age < 10){
         acc[current.firstName] = current.age;
     } 
     return acc;
   },{})
 
+  // console.log(ageLess10)
+
+  // with array
   const ageGreaterThan10 = allusers.reduce((acc, curr)=> {
     if(curr.age > 10){
         acc.push(curr.firstName);
@@ -117,10 +121,10 @@ function ArrayFunctions() {
     return acc;
   },[])
 
-  console.log(ageGreaterThan10)
+  // console.log(ageGreaterThan10)
 
   return (
-    <h1>MAP, Filter and Reduce Function</h1>
+    <h1></h1>
   )
 }
 
