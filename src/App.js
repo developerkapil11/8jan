@@ -1,6 +1,7 @@
 import ArrayFunctions from './components/ArrayFunctions';
 import CallbackCloserAnomenousFunc from './components/CallbackCloserAnomenousFunc';
 import TestMyself from './components/TestMyself';
+import RecursiveFunc from './interview/RecursiveFunc';
 
 export default function  () {
   return (
@@ -9,6 +10,7 @@ export default function  () {
       <CallbackCloserAnomenousFunc />
       <TestMyself />
 
+      <RecursiveFunc />
         1. Array.map <br/>
         2. Array.filter <br/>
         3. Array.Reduce <br/>

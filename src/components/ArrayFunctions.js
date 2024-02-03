@@ -10,7 +10,7 @@ function ArrayFunctions() {
     return elem+10;
   })
 
-  //console.log(newArr)
+  //  console.log(newArr)
 
   //2. we can also pass the function inside the map exp:-
 
@@ -44,19 +44,15 @@ function ArrayFunctions() {
 
   const arr2 = [5,4,3,11,6,7];
 
-  const addArr = arr2.reduce((acc, curr)=>{
-    //console.log(acc);
-    return acc = acc+curr; 
-  },0)
-
-  const gretest = arr2.reduce((acc, curr)=>{
-    if(acc < curr){
-      acc = curr
-    }
-    return acc;
+  const addArr =  arr2.reduce((acc,cur)=>{
+    // console.log(acc, cur)
+      if (cur < acc){
+        acc = cur;
+      };
+      return acc
   },0)
   // 0 is the initial value of reduce function
-  // console.log(gretest)
+   console.log(addArr)
 
 
   // Exaplesssssss //
@@ -75,28 +71,28 @@ function ArrayFunctions() {
       return { name:elem.firstName+' '+elem.lastName, age:elem.age }; 
   })
 
-  //console.log(fullName)
+  //  console.log(fullName)
 
   // 2. list fo same age of the users
 
   const sameAge = users.reduce((acc, curr)=>{
-    //console.log(acc[curr.age]);
+    //  console.log(acc[curr.age]);
     if(acc[curr.age]){
-      //console.log(acc[curr.age])
+      //  console.log(acc[curr.age])
       acc[curr.age] = ++acc[curr.age]
     } else {
       acc[curr.age] = 1;
     }
-    //console.log(acc);
+    //  console.log(acc);
     return acc;
   },{})
 
-  //console.log(sameAge)
+  //  console.log(sameAge)
 
   // 3. find out all the firstname whos age is greater than 10
 
-  const ageGreter10 = users.filter((val)=>val.age > 10).map((item)=>item.firstName);
-  //console.log(ageGreter10)
+  const ageGreter10 = users.filter((val)=>val.age > 10).map((x)=> x.firstName);
+  //  console.log(ageGreter10)
 
   // 4. find out all the first name whos age is greater than 10 with reduce function
   const allusers = [
