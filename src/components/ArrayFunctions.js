@@ -44,15 +44,19 @@ function ArrayFunctions() {
 
   const arr2 = [5,4,3,11,6,7];
 
-  const addArr =  arr2.reduce((acc,cur)=>{
-    // console.log(acc, cur)
-      if (cur > acc){
-        acc = cur;
-      };
-      return acc
+  const addArr = arr2.reduce((acc, curr)=>{
+    //console.log(acc);
+    return acc = acc+curr; 
   },0)
-  // 10 is the initial value of reduce function
-  // console.log(addArr)
+
+  const gretest = arr2.reduce((acc, curr)=>{
+    if(acc < curr){
+      acc = curr
+    }
+    return acc;
+  },0)
+  // 0 is the initial value of reduce function
+  // console.log(gretest)
 
 
   // Exaplesssssss //
@@ -91,7 +95,7 @@ function ArrayFunctions() {
 
   // 3. find out all the firstname whos age is greater than 10
 
-  const ageGreter10 = users.filter((val)=>val.age > 10).map((x)=> x.firstName);
+  const ageGreter10 = users.filter((val)=>val.age > 10).map((item)=>item.firstName);
   //console.log(ageGreter10)
 
   // 4. find out all the first name whos age is greater than 10 with reduce function

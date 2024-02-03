@@ -1,11 +1,14 @@
 import ArrayFunctions from './components/ArrayFunctions';
 import CallbackCloserAnomenousFunc from './components/CallbackCloserAnomenousFunc';
+import TestMyself from './components/TestMyself';
 
 export default function  () {
   return (
     <div className="App">
       <ArrayFunctions />
       <CallbackCloserAnomenousFunc />
+      <TestMyself />
+
         1. Array.map <br/>
         2. Array.filter <br/>
         3. Array.Reduce <br/>
@@ -22,10 +25,11 @@ export default function  () {
         14. Syncronous Callback and Asyncronous Callback  <br/>
 
 
-        15. Clousers
+        15. Clousers <br/>
         16. Event Listner <br/>
         17. Event Loop  <br/>
-        18. Hoisting
+        18. Hoisting  <br/>
+        19. Coercion
     </div>
   )
 }

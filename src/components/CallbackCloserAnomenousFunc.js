@@ -9,16 +9,11 @@ function CallbackCloserAnomenousFunc() {
     // Anonymous function using a function expression
 
     // example 1
-    // function addNumbers (a,b){
-    //     return a+b;
-    // }
-
-    // example 2
     // const addNumbers = function (x,y){
     //     return x*y;
     // }
 
-    //example 3
+    //example 2
     // const addNumbers = (c,d) => d-c; 
 
     // Anonymous function as an argument
@@ -30,7 +25,7 @@ function CallbackCloserAnomenousFunc() {
     // IIFE
 
     (function(){
-        //console.log('this is IIFE Function');
+        //console.log('Hi this is IIFE');
     })()
 
 
@@ -39,13 +34,15 @@ function CallbackCloserAnomenousFunc() {
      function a(){
         //console.log('a is called');
      }
+     // a()
 
      // **** Function Expression **** a function assigned to a variable is called, it is not support the hoisting //
-
-     const add = function (a,b) {
+     
+     var add = function (a,b) {
         return a+b;
      }
-     add(10,20);
+     //console.log(add(10,20));
+ 
 
      // **** Function Declaration **** a function define with name is called, it support hoisting//
 
@@ -62,7 +59,7 @@ function CallbackCloserAnomenousFunc() {
      // **** Named Function Expression **** we can give the name of the function with anomynous function //
 
      let abc = function xyz(){
-        console.log(xyz)
+        //console.log(xyz)
      }
 
      abc()
@@ -86,7 +83,7 @@ function CallbackCloserAnomenousFunc() {
         return 'hello'
      }
 
-     console.log(newVal(val()))
+     //console.log(newVal(val()))
 
 
      // **** Arrow Function **** a small expression of function is called Arrow function //
@@ -117,7 +114,6 @@ function CallbackCloserAnomenousFunc() {
     // most callback built in functions are known as syncronous callback because they call immidiatly
     // but the callback functions which execution is depend on the other or they will be executed when we want is called Asyncronous Callback 
 
-
     return (
         <div>
             <h1></h1>
@@ -126,3 +122,4 @@ function CallbackCloserAnomenousFunc() {
 }
 
 export default CallbackCloserAnomenousFunc
+ 
