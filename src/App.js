@@ -1,11 +1,13 @@
 import ArrayFunctions from './components/ArrayFunctions';
 import CallbackCloserAnomenousFunc from './components/CallbackCloserAnomenousFunc';
+import RecursiveFunc from './interview/RecursiveFunc';
 
 export default function  () {
   return (
     <div className="App">
       <ArrayFunctions />
       <CallbackCloserAnomenousFunc />
+      <RecursiveFunc />
         1. Array.map <br/>
         2. Array.filter <br/>
         3. Array.Reduce <br/>

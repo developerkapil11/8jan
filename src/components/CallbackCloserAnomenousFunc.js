@@ -62,7 +62,7 @@ function CallbackCloserAnomenousFunc() {
      // **** Named Function Expression **** we can give the name of the function with anomynous function //
 
      let abc = function xyz(){
-        console.log(xyz)
+        //console.log(xyz)
      }
 
      abc()
@@ -86,7 +86,7 @@ function CallbackCloserAnomenousFunc() {
         return 'hello'
      }
 
-     console.log(newVal(val()))
+     //console.log(newVal(val()))
 
 
      // **** Arrow Function **** a small expression of function is called Arrow function //
